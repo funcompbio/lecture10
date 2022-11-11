@@ -26,7 +26,7 @@ class: title-slide, middle, center
 
 ## Robert Castelo
 [robert.castelo@upf.edu](mailto:robert.castelo@upf.edu)
-### Dept. of Experimental and Health Sciences
+### Dept. of Medicine and Life Sciences
 ### Universitat Pompeu Fabra
 
 <br>
@@ -34,7 +34,7 @@ class: title-slide, middle, center
 ## Fundamentals of Computational Biology
 ### BSc on Human Biology
 ### UPF School of Health and Life Sciences
-### Academic Year 2021-2022
+### Academic Year 2022-2023
 
 ---
 
@@ -49,9 +49,9 @@ class: title-slide, middle, center
 * Re-running data analyses is essential for enabling reproducibility.  
   &nbsp;&nbsp;
 * _Manual and interactive intervention_ during data analysis introduces cost
-  in *re-running* data analysis.  
+  in *re-running* it and compromises its reproducibility.  
   &nbsp;&nbsp;
-* To facilitate re-running data analyses we need to **automatize** them.
+* To facilitate re-running data analyses we need to .boldface[automatize] them.
 ]
 .right-column[
 ![:scale 90% ](img/automation.png)
@@ -160,8 +160,8 @@ all : target-file
 target-file : prerequisites
 <--TAB--> action-command-to-produce-the-target-file
 </pre>
-* Note that **there is a TAB character** before the _action command_
-  associated to a rule. Single spaces **will not work**, you really need to
+* Note that .boldface[there is a TAB character] before the _action command_
+  associated to a rule. Single spaces .boldface[will not work], you really need to
   put a TAB character.  
   &nbsp;&nbsp;
 * The `all` rule may have more than one file as prerequisite and is the
