@@ -34,7 +34,7 @@ class: title-slide, middle, center
 ## Fundamentals of Computational Biology
 ### BSc on Human Biology
 ### UPF School of Health and Life Sciences
-### Academic Year 2022-2023
+### Academic Year 2023-2024
 
 ---
 
@@ -54,10 +54,13 @@ class: title-slide, middle, center
 * To facilitate re-running data analyses we need to .boldface[automatize] them.
 ]
 .right-column[
-![:scale 90% ](img/automation.png)
+<p style="margin-top:-20px">
+![:scale 75% ](img/automation.png)
+![:scale 75% ](img/main-control.gif)
 ]
 .footer[
-Image from [xkcd](https://xkcd.com/1319).
+Top image from [xkcd](https://xkcd.com/1319), bottom image taken from a
+Slack conversation.
 ]
 
 ---
@@ -94,7 +97,7 @@ but not limited to:
   [_compiled_](https://en.wikipedia.org/wiki/Compiler) to obtain an
   [executable program](https://en.wikipedia.org/wiki/Executable).  
   &nbsp;&nbsp;
-* On single executable could be the result of _compiling_ multiple files
+* One single executable could be the result of _compiling_ multiple files
   of source code with many, often intrincate, dependencies among them.  
   &nbsp;&nbsp;
 * In that context, [Stuart Feldman](https://en.wikipedia.org/wiki/Stuart_Feldman),
@@ -108,9 +111,9 @@ but not limited to:
   software development to automate the process of producing a single executable
   program from a set of source code files.  
   &nbsp;&nbsp;
-* Likewise, _make_ and _Makefiles_ can be to automate data analysis pipelines;
-  see the blog post ["Why Use Make"](https://bost.ocks.org/mike/make) by
-  [Mike Bostock](https://en.wikipedia.org/wiki/Mike_Bostock), former head of
+* Likewise, _make_ and _Makefiles_ can be used to automate data analysis
+  pipelines; see the blog post ["Why Use Make"](https://bost.ocks.org/mike/make)
+  by [Mike Bostock](https://en.wikipedia.org/wiki/Mike_Bostock), former head of
   data-visualization projects at the New York Times and current CTO at
   [Observable](https://observablehq.com).
 
@@ -120,7 +123,7 @@ but not limited to:
 
 * To work with _make_ and _Makefiles_ you need first to identify which are
 the dependencies among your files, and then express those dependencies
-_backwards_ as rules in a file called _Makefile_ using a specific syntax.
+_backwards_ as rules in a file called **`Makefile`** using a specific syntax.
 
 .left-column[
 
@@ -181,17 +184,16 @@ $ make target-file
 
 ## Concluding remarks
 
-* _make_ and _Makefiles_ can help us automating our data analysis pipeline.
-
+* _make_ and _Makefiles_ can help us automating our data analysis pipeline.  
+&nbsp;&nbsp;
 * You can find further materials on using _make_ and _Makefiles_ in this
 [automation chapter](https://stat545.com/automation-overview.html) from a
 course on data science by
 [Jenny Bryan](https://jennybryan.org) and in this
 [workshop material](https://swcarpentry.github.io/make-novice) by
-[The Software Carpentry](https://software-carpentry.org).
-
+[The Software Carpentry](https://software-carpentry.org).  
+&nbsp;&nbsp;
 * Further topics on automation that we have not covered here are:
-
   * [Unit testing](https://en.wikipedia.org/wiki/Unit_testing) for
   automatically checking that our pipeline behaves as expected. In
   Python we have the module
@@ -199,8 +201,8 @@ course on data science by
   for that purpose, while in R we have the packages
   [RUnit](https://cran.r-project.org/web/packages/RUnit/index.html)
   and
-  [testthat](https://testthat.r-lib.org).
-
+  [testthat](https://testthat.r-lib.org).  
+  &nbsp;&nbsp;
   * [Continuous integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration)
   for triggering automated unit tests each time we update our pipeline. Some
   of the most widely used CI environments are
